@@ -18,4 +18,6 @@ public interface NumberGenerator {
      * @return the max number
      */
     int getMaxNumber();
+
+    int getMinNumber();
 }
