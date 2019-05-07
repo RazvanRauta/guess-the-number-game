@@ -1,7 +1,6 @@
 package udemy.springcourse;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -10,10 +9,9 @@ import javax.annotation.PostConstruct;
 /**
  * The type Message generator.
  */
+@Slf4j
 @Component
 public class MessageGeneratorImpl implements MessageGenerator {
-
-    private static final Logger log = LoggerFactory.getLogger(MessageGeneratorImpl.class);
 
 
     private final Game game;
