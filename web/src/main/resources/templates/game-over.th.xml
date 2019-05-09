@@ -1,0 +1,20 @@
+<thlogic>
+    <attr sel="#headId"
+          th:replace="~{fragments/head :: headFragment}"/>
+    <attr sel="#restartId"
+          th:href="@{__${T(udemy.springcourse.util.GameMappings).RESTART}__}"/>
+    <attr sel="#resultMessage"
+          th:text="${__${T(udemy.springcourse.util.AttributeNames).RESULT_MESSAGE}__}"/>
+    <attr sel="#footerId"
+          th:replace="~{fragments/footer :: footerFragment}"/>
+    <attr sel="#homeId"
+          th:href="@{__${T(udemy.springcourse.util.GameMappings).HOME}__}"/>
+    <attr sel="#game-over"
+          th:text="#{game.over}"/>
+    <attr sel="#play-again"
+          th:text="#{game.restart}"/>
+    <attr sel="#home"
+          th:text="#{game.home}"/>
+    <attr sel="#title"
+          th:text="#{game.title}"/>
+</thlogic>

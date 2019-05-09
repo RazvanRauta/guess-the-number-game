@@ -1,6 +1,6 @@
 package udemy.springcourse;
 
 public interface MessageGenerator {
-    String messageGenerator();
+    String getMainMessage();
     String getResultMessage();
 }

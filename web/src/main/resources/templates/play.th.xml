@@ -1,0 +1,26 @@
+<thlogic>
+    <attr sel="#headId"
+          th:replace="~{fragments/head :: headFragment}"/>
+
+    <attr sel="#game-title"
+          th:text="#{game.title}"/>
+
+    <attr sel="#mainMessage"
+          th:text="${__${T(udemy.springcourse.util.AttributeNames).MAIN_MESSAGE}__}"/>
+
+    <attr sel="#resultMessage"
+          th:text="${__${T(udemy.springcourse.util.AttributeNames).RESULT_MESSAGE}__}"/>
+
+    <attr sel="#footerId"
+          th:replace="~{fragments/footer :: footerFragment}"/>
+
+    <attr sel="#gameForm"
+          th:action="@{__${T(udemy.springcourse.util.GameMappings).PLAY}__}"/>
+
+    <attr sel="#enter-guess"
+          th:text="#{game.enter.guess}"/>
+
+    <attr sel="#submit"
+          th:value="#{game.submit}"/>
+
+</thlogic>
